@@ -11,7 +11,7 @@ file=$(basename $1)
 if [ -d $dir ] 
 then
    cd $dir
-   echo $2 >> file
+   echo $2 >> $file
 else
     sudo mkdir -p $dir 
     cd $dir
